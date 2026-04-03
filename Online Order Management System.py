@@ -32,3 +32,11 @@ for key,value in orders.items():
         elif i[0]== 'Pencil':
             total_quantity['Pencil']=int(total_quantity['Pencil'])+int(i[1])
 print(total_quantity)
+
+
+def get_bulk_customers(orders):
+    for key,value in orders.items():
+        if len(orders[key]['items']) > 3:
+            print(orders[key]['customer'])
+
+get_bulk_customers(orders)
