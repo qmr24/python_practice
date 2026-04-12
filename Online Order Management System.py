@@ -40,3 +40,27 @@ def get_bulk_customers(orders):
             print(orders[key]['customer'])
 
 get_bulk_customers(orders)
+
+
+
+
+def order_of_customer(orders):
+    for key,value in orders.items():
+        print(f"CUSTOMER ID : {key}")
+        name=orders[key]['customer']
+        print(f"CUSTOMER NAME : {name}")
+        for i in orders[key]['items']:
+            print(f"{i[0]}: {i[1]}")
+    
+
+
+
+
+order_of_customer(orders)
+
+
+
+
+
+
+
