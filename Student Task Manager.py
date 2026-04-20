@@ -41,7 +41,14 @@ def search_task():
             result.append(task[key])
     print(result)
 
-#del task[task_id]
+def del_task( ):
+    del_taskid=input("enter the task id which you want to delete")
+    if  del_taskid in task :
+                del task[del_taskid]
+                print("task deleted")
+    else:
+        print("we didn't find the task id ")
+
             
 
 
